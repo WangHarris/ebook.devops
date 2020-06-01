@@ -57,7 +57,7 @@ sudo vim /docker/app-conf/nginx/nginx.conf
 ```json
 server {
     listen    80;
-    server_name    gitlab.xlck.com;
+    server_name    gitlab.harris.com;
     location / {
         proxy_pass http://172.16.2.35:10080;
     }    
@@ -65,21 +65,12 @@ server {
 
 server {
     listen    80;
-    server_name    zbox.xlck.com;
+    server_name    zbox.harris.com;
     location / {
         proxy_pass http://172.16.2.35:8930;
     }    
 }
 
-server {
-    listen    80;
-    server_name    office.xlck.com;
-    root    /usr/share/nginx/html/office.xlck.com/;
-
-    location / {
-    	index index.html;
-	}    
-}
 ```
 
 ### 重启容器
@@ -88,7 +79,4 @@ server {
 docker restart nginx
 ```
 
-### 部署祥龙办公导航静态站点
-
-上传`office.xlck.com`文件夹到`/docker/app-data/nginx/html`下。
 
