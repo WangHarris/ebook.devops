@@ -4,7 +4,7 @@ email: harris-wang@qq.com
 date: 2020-07-19
 ---
 
-# CI/CD Mind
+# CI/CD Design
 
 [TOC]
 

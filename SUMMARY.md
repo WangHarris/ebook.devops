@@ -37,7 +37,7 @@
     * [3.4.5 代码审核](use/gitlab/review.md)
 
   * [3.5 jenkins](use/jenkins/readme.md)
-    * [3.5.1 CI/CD Mind](use/jenkins/mind.md)
+    * [3.5.1 CI/CD Design](use/jenkins/design.md)
   
 * [4. 数据备份](backup/README.md)
 
