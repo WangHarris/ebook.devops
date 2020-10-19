@@ -1,42 +1,42 @@
-## nginx
+# nginx
 
-### 安装镜像
+## 安装镜像
 
 ```shell
 docker pull nginx
 ```
 
-### 创建容器
+## 创建容器
 
 ```shell
 docker run --name nginx -d -p 80:80 nginx
 ```
 
-### 创建本地nginx配置文件夹
+## 创建本地nginx配置文件夹
 
 ```shell
 sudo mkdir /docker/app-conf/nginx/
 ```
 
-### 复制容器中的nginx.conf文件到本地配置文件夹中
+## 复制容器中的nginx.conf文件到本地配置文件夹中
 
 ```shell
 sudo docker cp nginx:/etc/nginx/nginx.conf /docker/app-conf/nginx/
 ```
 
-### 停止nginx容器
+## 停止nginx容器
 
 ```shell
 docker stop nginx
 ```
 
-### 删除容器
+## 删除容器
 
 ```shell
 docker rm nginx
 ```
 
-### 重新创建容器
+## 重新创建容器
 
 ```shell
 docker run --name nginx -d \
@@ -46,7 +46,7 @@ docker run --name nginx -d \
 -p 80:80 nginx
 ```
 
-### 编辑nginx.conf文件
+## 编辑nginx.conf文件
 
 ```shell
 sudo vim /docker/app-conf/nginx/nginx.conf
@@ -71,9 +71,25 @@ server {
     }    
 }
 
+server {
+    listen    80;
+    server_name    office.harris.com;
+    
+    location / {
+        alias /usr/share/nginx/html/office.harris.com/;
+        index index.html;
+    }
+
+    location /doc {
+        alias /usr/share/nginx/html/_book/;
+        index index.html;
+        autoindex on;
+    }
+}
+
 ```
 
-### 重启容器
+## 重启容器
 
 ```shell
 docker restart nginx

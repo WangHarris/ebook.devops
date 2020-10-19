@@ -1,3 +1,5 @@
+# 配置hosts
+
 以管理员身份打开记事本
 
 打开`C:\Windows\System32\drivers\etc\hosts`文件

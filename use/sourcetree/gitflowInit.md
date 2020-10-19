@@ -1,4 +1,4 @@
-## Git flow初始化
+# Git flow初始化
 
 要使用git flow，必须对克隆下的仓库进行初始化。
 

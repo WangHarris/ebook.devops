@@ -1,12 +1,12 @@
 # ubuntu18.04安装docker
 
-### 卸载老版本docker
+## 卸载老版本docker
 
 ```shell
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
-### 安装新版本
+## 安装新版本
 
 ```shell
 sudo apt-get update

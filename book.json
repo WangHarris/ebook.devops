@@ -3,5 +3,27 @@
     "author": "Harris Wang",
     "description": "软件团队协作工具介绍",
     "language": "zh-hans",
-    "gitbook": "3.2.3"
+    "gitbook": "3.2.3",
+
+    "plugins":[
+        "-sharing",
+        "-lunr",
+        "-search",
+        "search-pro",
+        "expandable-chapters",
+        "hide-element",
+        "code",
+        "splitter",
+        "popup",
+        "anchor-navigation-ex"
+    ],
+
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "multipleH1": false
+        },
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        }
+    }
 }

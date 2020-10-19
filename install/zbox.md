@@ -1,12 +1,12 @@
-## 禅道
+# 禅道
 
-### 安装镜像
+## 安装镜像
 
 ```shell
 docker pull idoop/zentao
 ```
 
-### 创建容器
+## 创建容器
 
 ```shell
 docker run -d -p 8930:80 -p 3306:3306 \

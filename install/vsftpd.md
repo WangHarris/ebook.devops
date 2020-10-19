@@ -1,12 +1,12 @@
-## vsftpd
+# vsftpd
 
-### 1. 安装镜像
+## 安装镜像
 
 ```shell
 docker pull fauria/vsftpd
 ```
 
-### 2. 运行容器
+## 运行容器
 
 ```shell
 docker run -d --name vsftpd \
@@ -17,7 +17,7 @@ docker run -d --name vsftpd \
 --restart=always fauria/vsftpd
 ```
 
-### 3. 添加新的ftp用户
+### 添加新的ftp用户
 
 ```shell
 docker exec -i -t vsftpd bash

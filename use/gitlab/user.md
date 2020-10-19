@@ -1,6 +1,6 @@
-## 用户
+# 用户
 
-### 添加用户
+## 添加用户
 
 * 用户可以自己注册
   ![](./../../img/gitlab/register.png)
@@ -14,7 +14,7 @@
 
   点击链接，重置密码，即可登录。
 
-### 用户上传自己的SSH Key
+## 用户上传自己的SSH Key
 
 记事本打开`C:\Users\Harris Wang\.ssh\id_rsa.pub`文件，内容如下：
 
