@@ -30,4 +30,5 @@
     * [项目](use/gitlab/project.md) 
     * [分支保护](use/gitlab/protect.md)
     * [代码审核](use/gitlab/review.md)
+  * [jenkins](use/jenkins/readme.md)
 * [数据备份](backup/README.md)
