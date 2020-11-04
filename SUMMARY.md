@@ -1,6 +1,6 @@
 # Summary
 
-* [软件团队协作工具介绍](README.md)
+* [软件团队基础设施介绍](README.md)
 * [安装](install/README.md)
   * [docker](install/docker.md)
   * [docker-compose](install/docker-compose.md)
